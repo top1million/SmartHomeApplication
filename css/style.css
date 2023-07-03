@@ -1,4 +1,29 @@
 body {
-    font-family: "Inter", sans-serif;
+  font-family: "Inter", sans-serif;
 
-  }
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #333;
+  margin: 1rem 0;
+}
+
+nav {
+  background-color: #1E5AFA;
+}
+
+.nav-link {
+  color: white !important;
+  font-size: 1.2rem;
+}
+
+.nav-link:hover {
+  color: #1E5AFA !important;
+  background-color: white !important;
+}
+
+.nav-link:p {
+  color: #1E5AFA !important;
+}
