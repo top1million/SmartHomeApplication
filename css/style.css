@@ -511,6 +511,57 @@ p[class="position"] {
 }
 
 /*-----------------------------------------------------------------------------------*/
+/* Subscribe
+/*-----------------------------------------------------------------------------------*/
+
+
+.subscribe {
+  width: 1170px;
+  height: 300px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: var(--primary);
+  margin-left: 135px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.subscribe h5 {
+  color: #FDFDFF !important;
+  font-size: 48px !important;
+  font-weight: 600 !important;
+  line-height: 56px !important;
+}
+
+.subscribe h2 {
+  text-align: start;
+  width: 556px;
+  color: #F5F2FF;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.subscribe button {
+  width: 220px;
+  background-color: var(--primary);
+  height: 70px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 1px solid #FAFAFA;
+  box-shadow: 0px 1.8518518209457397px 3.1481480598449707px 0px rgba(56, 56, 56, 0.02), 0px 8.148148536682129px 6.518518447875977px 0px rgba(56, 56, 56, 0.04), 0px 20px 13px 0px rgba(56, 56, 56, 0.05), 0px 38.51852035522461px 25.481481552124023px 0px rgba(56, 56, 56, 0.06), 0px 64.81481170654297px 46.85185241699219px 0px rgba(56, 56, 56, 0.08), 0px 100px 80px 0px rgba(56, 56, 56, 0.10);
+}
+
+.subscribe button span {
+  color: #FAFAFA;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: normal;
+}
+
+
+/*-----------------------------------------------------------------------------------*/
 /* Footer
 /*-----------------------------------------------------------------------------------*/
 
@@ -561,21 +612,28 @@ footer a:hover {
 }
 
 footer button {
-  padding: 5px;
-  height: 58px;
-  margin: 5px;
+  border-radius: 5px;
+  border: 1px solid #011037;
+  width: 100px;
+  height: 46px;
   flex-shrink: 0;
-  background-color: var(--headers);
-  border-radius: 10px;
-  color: var(--default);
-  font-size: 16px;
-  font-weight: 400;
+  box-shadow: 0px 1.8518518209457397px 3.1481480598449707px 0px rgba(56, 56, 56, 0.02), 0px 8.148148536682129px 6.518518447875977px 0px rgba(56, 56, 56, 0.04), 0px 20px 13px 0px rgba(56, 56, 56, 0.05), 0px 38.51852035522461px 25.481481552124023px 0px rgba(56, 56, 56, 0.06), 0px 64.81481170654297px 46.85185241699219px 0px rgba(56, 56, 56, 0.08), 0px 100px 80px 0px rgba(56, 56, 56, 0.10);
 }
-.footer_line{
-  width:100%;
+
+.footer_line {
+  width: 100%;
   height: 100px;
   background-color: #000F37;
   align-items: center;
   justify-content: center;
   display: flex;
+}
+
+footer input {
+  border-radius: 5px;
+  border: 1px solid #E7EBEE;
+  background: #FAFAFA;
+  width: 189px;
+  height: 46px;
+  flex-shrink: 0;
 }
