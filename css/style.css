@@ -3,6 +3,12 @@ body {
 
 }
 
+.container1 {
+  width: 1600px !important;
+  margin: auto;
+  padding: 0 20px;
+}
+
 p {
   font-size: 1.2rem;
   line-height: 1.5;
@@ -21,9 +27,135 @@ nav {
 
 .nav-link:hover {
   color: #1E5AFA !important;
-  background-color: white !important;
 }
 
 .nav-link:p {
   color: #1E5AFA !important;
+}
+
+a.nav-link p {
+  font-size: 35px;
+  color: white !important;
+  font-weight: bold;
+  margin-left: 450px;
+}
+
+button.nav-link {
+  background-color: #1E5AFA;
+  color: black !important;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+
+}
+
+.heroheadding {
+  background-color: #1E5AFA;
+  height: 550px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10%;
+}
+
+.flex p {
+  font-size: small;
+  color: white;
+  width: 520px;
+  text-align: center
+}
+
+.about_us {
+  background-color: #fafafa;
+  margin-top: 500px;
+}
+
+h2 {
+  font-size: 50px !important;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 50px;
+  color: white;
+  width: 350px;
+}
+
+.heroheadding .flex img {
+  margin: 20px;
+  border-radius: 35px;
+  box-shadow: inset;
+  box-shadow: -10px 10px 10px 1px #333;
+}
+
+.flexlogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10%;
+  margin-top: 50px;
+}
+
+.flexlogo img {
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: inset;
+  box-shadow: -10px 10px 10px 1px #333;
+}
+
+div[class~="flex"] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10%;
+}
+
+.flexabout h1 {
+  font-size: 85px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 50px
+}
+
+.aboutbanner {
+  margin-left: 100px;
+  margin-right: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.aboutbanner div {
+  margin: 90px;
+}
+
+.aboutbanner h2 {
+  width: fit-content;
+  font-weight: bold;
+  color: #000F37
+}
+
+.aboutbanner img {
+  width: 100%;
+  height: 100%;
+  border-radius: 35px;
+  box-shadow: inset;
+  box-shadow: -10px 10px 10px 1px #333;
+}
+
+.aboutbanner .left {
+  width: 600px;
+}
+
+.left button {
+  width: 185px;
+  height: 58px;
+  color: white;
+  border-radius: 10px;
+  background-color: #000F37;
+}
+.left button:hover {
+  background-color: #1E5AFA;
 }
