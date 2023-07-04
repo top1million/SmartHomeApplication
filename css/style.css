@@ -1,15 +1,19 @@
 /*
   1. Use a more-intuitive box-sizing model.
 */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
+
 /*
   2. Remove default margin
 */
 * {
   margin: 0;
 }
+
 /*
   Typographic tweaks!
   3. Add accessible line-height
@@ -19,38 +23,59 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
+
 /*
   5. Improve media defaults
 */
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
 }
+
 /*
   6. Remove built-in form typography styles
 */
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
+
 /*
   7. Avoid text overflows
 */
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
 }
+
 /*
   8. Create a root stacking context
 */
-#root, #__next {
+#root,
+#__next {
   isolation: isolate;
 }
+
 body {
   font-family: "Inter", sans-serif;
 
 }
-.outercontainer{
+
+.outercontainer {
   background-color: #1E5AFA;
 }
+
 .container1 {
   width: 85% !important;
   max-width: 1500px;
@@ -68,37 +93,19 @@ p {
 nav {
   background-color: #1E5AFA;
 }
-
-.nav-link {
-  color: white !important;
-  font-size: 1.2rem;
+ul{
+  vertical-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin: 0;
 }
 
-.nav-link:hover {
-  color: #1E5AFA !important;
-}
 
-.nav-link:p {
-  color: #1E5AFA !important;
-}
 
-a.nav-link p {
-  font-size: 35px;
-  color: white !important;
-  font-weight: bold;
-  margin-left: 120px;
-}
 
-button.nav-link {
-  background-color: #1E5AFA;
-  color: black !important;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
-  font-size: 1.2rem;
-  cursor: pointer;
 
-}
 
 .heroheadding {
   background-color: #1E5AFA;
@@ -113,15 +120,15 @@ button.nav-link {
   padding: 0 10%;
 }
 
-.p {
+.heroBody {
   display: flex;
   width: 756px;
   justify-content: center;
   align-items: center;
-  margin-left : 342px;
+  margin-left: 342px;
 }
 
-.p p {
+.heroBody p {
   color: #FAFAFA;
   text-align: center;
   font-size: 18px;
@@ -140,26 +147,48 @@ button.nav-link {
 
 .about_us {
   margin-top: 560px !important;
+  display: flex;
+  justify-content: center;
 }
 
-.heroheadding h2 {
+h1 {
   font-size: 85px !important;
-  font-weight: 800;
-  text-align: center;
-  margin-top: 50px;
+  font-weight: 800 !important;
+  text-align: center !important;
+  margin-top: 50px !important;
   color: white;
-  width: 550px;
-  font-style: normal;
-  font-family: Inter;
+  width: 550px !important;
+  font-style: normal !important;
+  font-family: Inter !important;
 }
 
 h2 {
-  font-size: 50px !important;
-  font-weight: bold;
-  text-align: center;
-  margin-top: 50px;
-  color: white;
-  width: 350px;
+  color: #313131;
+  text-align: center !important;
+  font-size: 85px !important;
+  font-family: Inter !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  line-height: 100% !important;
+  letter-spacing: -3px !important;
+}
+
+h3 {
+  color: #000F37 !important;
+  font-size: 46px !important;
+  font-family: Inter !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  line-height: 100% !important;
+}
+
+h4 {
+  color: #575757;
+  font-size: 20px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
 }
 
 .heroheadding .flex img {
@@ -191,13 +220,6 @@ div[class~="flex"] {
   padding: 0 10%;
 }
 
-.flexabout h2 {
-  font-size: 85px;
-  text-align: center;
-  font-weight: bold;
-  margin-bottom: 50px
-}
-
 .aboutbanner {
   margin-left: 100px;
   margin-right: 100px;
@@ -209,11 +231,8 @@ div[class~="flex"] {
   margin: 90px;
 }
 
-.aboutbanner h2 {
-  width: fit-content;
-  font-weight: bold;
-  color: #000F37
-}
+
+
 
 .aboutbanner img {
   width: 100%;
