@@ -156,6 +156,73 @@ div[class~="flex"] {
   border-radius: 10px;
   background-color: #000F37;
 }
+
 .left button:hover {
   background-color: #1E5AFA;
+}
+
+.left p {
+  font-size: 20px;
+  color: #000F37;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.Clients .header p {
+  font-size: 85px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 50px
+}
+
+.Clients .flex p {
+  font-size: large;
+  color: #000F37;
+  width: 520px;
+  text-align: center;
+}
+
+.testimonies {
+  background-color: #FAFAFA;
+  margin-top: 100px
+}
+
+.testimonies .header p {
+  font-size: 85px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.testimonies .flex p {
+  font-size: large;
+  color: #000F37;
+  width: 520px;
+  text-align: center;
+}
+
+.testimonies .flex .test{
+  width :580px;
+  height: 273px;
+  border: #000F37 1px solid;
+}
+.testimonies .flex .test p{
+  font-size: 14px;
+  color: #5F7285;
+  text-align: center;
+  margin: 20px;
+  margin-top : 60px;
+  font-style: italic;
+}
+.card{
+  display: flex;
+  justify-content: center;
+  background-color: #000F37;
+}
+.card img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 20px;
+
 }
