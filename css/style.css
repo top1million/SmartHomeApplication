@@ -1,16 +1,15 @@
 /*-----------------------------------------------------------------------------------*/
 /* FONTS 
 /*-----------------------------------------------------------------------------------*/
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap");
 
 /*-----------------------------------------------------------------------------------*/
 /* VARIABLES
 /*-----------------------------------------------------------------------------------*/
 :root {
-  --primary: #1E5AFA;
-  ;
+  --primary: #1e5afa;
   --secondary: #424242;
-  --default: #FFF;
+  --default: #fff;
   --headers: #313131;
 }
 
@@ -97,13 +96,13 @@ mark,
 audio,
 video,
 input,
-input[type=button],
+input[type="button"],
 button {
   margin: 0;
   padding: 0;
   border: 0;
   font-size: 100%;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
   font-weight: 400;
@@ -162,12 +161,11 @@ h1 {
   text-align: center !important;
   margin-top: 50px !important;
   color: var(--default) !important;
-  ;
   width: 550px !important;
 }
 
 h2 {
-  color: #FAFAFA;
+  color: #fafafa;
   text-align: center;
   font-size: 18px;
   font-family: Inter;
@@ -194,7 +192,6 @@ h4 {
 
 h5 {
   color: var(--secondary) !important;
-  ;
   font-size: 20px;
   font-weight: 400;
   line-height: 32px;
@@ -215,80 +212,43 @@ b {
 .container_one {
   width: 75% !important;
   max-width: 1500px;
-  margin: auto;
-  padding: 0 20px;
-}
-
-p {
-  font-size: 1.2rem;
-  line-height: 1.5;
-  color: #333;
-  margin: 1rem 0;
+  height: fit-content;
+  margin: 0 auto;
+  padding: 30px;
 }
 
 nav {
-  background-color: #1E5AFA;
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 
 nav ul {
-  margin: 10%;
-  vertical-align: center;
   display: flex;
-  justify-content: space-around;
   align-items: center;
   list-style: none;
-  margin: 0;
+  gap: 35px;
 }
 
-li a {
+nav a {
   color: #fff;
-  text-decoration: none;
-  font-size: 1.2rem;
-  font-weight: 500;
-  padding: 1rem 0;
-  margin: 0 1rem;
   transition: all 0.3s ease;
-  width: auto;
-  height: auto;
 }
 
-li a:hover {
-  color: #000F37;
+nav a:hover {
+  color: #000f37;
 }
 
-li button {
-  color: var(--headers);
-  text-decoration: none;
-  transition: all 0.3s ease;
-  width: 152px;
-  height: 58px;
-  margin: 5px;
-  flex-shrink: 0;
-  background-color: var(--default);
-  border-radius: 10px;
+nav a span{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin : 0 auto;
 }
-
-li button:hover {
-  background-color: var(--secondary);
-  color: var(--default);
-}
-
-.main span {
-  font-size: 32px !important;
-  font-weight: 700 !important;
-}
-
-.main {
-  margin-right: 210px !important;
-}
-
 
 /*-----------------------------------------------------------------------------------*/
 /* HeroAdding
 /*-----------------------------------------------------------------------------------*/
-
 
 .heroheadding {
   background-color: var(--primary);
@@ -310,15 +270,12 @@ li button:hover {
   margin-left: 342px;
 }
 
-
-
 .flex p {
   font-size: small;
   color: white;
   width: 520px;
-  text-align: center
+  text-align: center;
 }
-
 
 /*-----------------------------------------------------------------------------------*/
 /* about_us
@@ -329,13 +286,11 @@ li button:hover {
   justify-content: center;
 }
 
-
-
 .heroheadding .flex img {
   margin: 20px;
   border-radius: 35px;
   box-shadow: inset;
-  box-shadow: -20px 10px 3000px 1px rgb(65, 58, 58)
+  box-shadow: -20px 10px 3000px 1px rgb(65, 58, 58);
 }
 
 .flexlogo {
@@ -350,7 +305,7 @@ li button:hover {
   margin: 20px;
   border-radius: 10px;
   box-shadow: inset;
-  box-shadow: -20px 10px 300px 1px rgb(65, 58, 58)
+  box-shadow: -20px 10px 300px 1px rgb(65, 58, 58);
 }
 
 div[class~="flex"] {
@@ -371,15 +326,12 @@ div[class~="flex"] {
   margin: 90px;
 }
 
-
-
-
 .aboutbanner img {
   width: 100%;
   height: 100%;
   border-radius: 35px;
   box-shadow: inset;
-  box-shadow: -20px 10px 300px 1px rgb(65, 58, 58)
+  box-shadow: -20px 10px 300px 1px rgb(65, 58, 58);
 }
 
 .aboutbanner .left {
@@ -391,16 +343,16 @@ div[class~="flex"] {
   height: 58px;
   color: white;
   border-radius: 10px;
-  background-color: #000F37;
+  background-color: #000f37;
 }
 
 .left button:hover {
-  background-color: #1E5AFA;
+  background-color: #1e5afa;
 }
 
 .left p {
   font-size: 20px;
-  color: #000F37;
+  color: #000f37;
   font-weight: bold;
   margin-top: 20px;
 }
@@ -409,19 +361,19 @@ div[class~="flex"] {
   font-size: 85px;
   text-align: center;
   font-weight: bold;
-  margin-bottom: 50px
+  margin-bottom: 50px;
 }
 
 .Clients .flex p {
   font-size: large;
-  color: #000F37;
+  color: #000f37;
   width: 520px;
   text-align: center;
 }
 
 .testimonies {
-  background-color: #FAFAFA;
-  margin-top: 100px
+  background-color: #fafafa;
+  margin-top: 100px;
 }
 
 .testimonies .header p {
@@ -433,7 +385,7 @@ div[class~="flex"] {
 
 .testimonies .flex p {
   font-size: large;
-  color: #000F37;
+  color: #000f37;
   width: 520px;
   text-align: center;
 }
@@ -448,7 +400,7 @@ div[class~="flex"] {
 
 .testimonies .flex .test p {
   font-size: 14px;
-  color: #5F7285;
+  color: #5f7285;
   text-align: center;
   margin: 20px;
   margin-top: 60px;
@@ -476,7 +428,7 @@ div[class~="flex"] {
 
 .card1 div p {
   font-size: 14px;
-  color: #5F7285;
+  color: #5f7285;
   text-align: center;
   font-style: italic;
   width: 50px;
@@ -492,19 +444,19 @@ div[class~="flex"] {
   all: revert !important;
   width: fit-content !important;
   font-size: 14px !important;
-  color: #5F7285 !important;
+  color: #5f7285 !important;
 }
 
 p[class="name"] {
   font-size: 14px !important;
-  color: #5F7285 !important;
+  color: #5f7285 !important;
   width: fit-content !important;
   font-weight: bold !important;
 }
 
 p[class="position"] {
   font-size: 12x !important;
-  color: #5F7285 !important;
+  color: #5f7285 !important;
   width: fit-content !important;
   font-style: italic !important;
   font-weight: lighter !important;
@@ -521,8 +473,8 @@ p[class="position"] {
   width: 676px;
   height: 100px;
   border-radius: 10px;
-  border: 1px solid #E7EBEE;
-  background: #FAFAFA;
+  border: 1px solid #e7ebee;
+  background: #fafafa;
 }
 
 .faq li {
@@ -542,7 +494,7 @@ p[class="position"] {
   margin-left: 15px;
   margin-right: 35px;
   font-size: 35px;
-  background-color: #E7EBEE;
+  background-color: #e7ebee;
 }
 
 /*-----------------------------------------------------------------------------------*/
@@ -570,14 +522,19 @@ p[class="position"] {
 }
 
 .downloadApp img {
-  box-shadow: -5px 1.8518518209457397px 3.1481480598449707px 0px rgba(56, 56, 56, 0.02), 0px 8.148148536682129px 6.518518447875977px 0px rgba(56, 56, 56, 0.04), 0px 20px 13px 0px rgba(56, 56, 56, 0.05), 0px 38.51852035522461px 25.481481552124023px 0px rgba(56, 56, 56, 0.06), 0px 64.81481170654297px 46.85185241699219px 0px rgba(56, 56, 56, 0.08), 0px 100px 80px 0px rgba(56, 56, 56, 0.10);
+  box-shadow: -5px 1.8518518209457397px 3.1481480598449707px 0px
+      rgba(56, 56, 56, 0.02),
+    0px 8.148148536682129px 6.518518447875977px 0px rgba(56, 56, 56, 0.04),
+    0px 20px 13px 0px rgba(56, 56, 56, 0.05),
+    0px 38.51852035522461px 25.481481552124023px 0px rgba(56, 56, 56, 0.06),
+    0px 64.81481170654297px 46.85185241699219px 0px rgba(56, 56, 56, 0.08),
+    0px 100px 80px 0px rgba(56, 56, 56, 0.1);
   border-radius: 30px;
 }
 
 /*-----------------------------------------------------------------------------------*/
 /* Subscribe
 /*-----------------------------------------------------------------------------------*/
-
 
 .subscribe {
   width: 1170px;
@@ -592,7 +549,7 @@ p[class="position"] {
 }
 
 .subscribe h5 {
-  color: #FDFDFF !important;
+  color: #fdfdff !important;
   font-size: 48px !important;
   font-weight: 600 !important;
   line-height: 56px !important;
@@ -601,7 +558,7 @@ p[class="position"] {
 .subscribe h2 {
   text-align: start;
   width: 556px;
-  color: #F5F2FF;
+  color: #f5f2ff;
   font-weight: 400;
   line-height: 32px;
 }
@@ -612,18 +569,23 @@ p[class="position"] {
   height: 70px;
   flex-shrink: 0;
   border-radius: 5px;
-  border: 1px solid #FAFAFA;
-  box-shadow: 0px 1.8518518209457397px 3.1481480598449707px 0px rgba(56, 56, 56, 0.02), 0px 8.148148536682129px 6.518518447875977px 0px rgba(56, 56, 56, 0.04), 0px 20px 13px 0px rgba(56, 56, 56, 0.05), 0px 38.51852035522461px 25.481481552124023px 0px rgba(56, 56, 56, 0.06), 0px 64.81481170654297px 46.85185241699219px 0px rgba(56, 56, 56, 0.08), 0px 100px 80px 0px rgba(56, 56, 56, 0.10);
+  border: 1px solid #fafafa;
+  box-shadow: 0px 1.8518518209457397px 3.1481480598449707px 0px
+      rgba(56, 56, 56, 0.02),
+    0px 8.148148536682129px 6.518518447875977px 0px rgba(56, 56, 56, 0.04),
+    0px 20px 13px 0px rgba(56, 56, 56, 0.05),
+    0px 38.51852035522461px 25.481481552124023px 0px rgba(56, 56, 56, 0.06),
+    0px 64.81481170654297px 46.85185241699219px 0px rgba(56, 56, 56, 0.08),
+    0px 100px 80px 0px rgba(56, 56, 56, 0.1);
 }
 
 .subscribe button span {
-  color: #FAFAFA;
+  color: #fafafa;
   text-align: center;
   font-size: 18px;
   font-weight: 500;
   line-height: normal;
 }
-
 
 /*-----------------------------------------------------------------------------------*/
 /* Footer
@@ -645,7 +607,6 @@ footer h6 {
   font-weight: 700;
   line-height: normal;
 }
-
 
 footer a {
   color: var(--headers) !important;
@@ -681,13 +642,19 @@ footer button {
   width: 100px;
   height: 46px;
   flex-shrink: 0;
-  box-shadow: 0px 1.8518518209457397px 3.1481480598449707px 0px rgba(56, 56, 56, 0.02), 0px 8.148148536682129px 6.518518447875977px 0px rgba(56, 56, 56, 0.04), 0px 20px 13px 0px rgba(56, 56, 56, 0.05), 0px 38.51852035522461px 25.481481552124023px 0px rgba(56, 56, 56, 0.06), 0px 64.81481170654297px 46.85185241699219px 0px rgba(56, 56, 56, 0.08), 0px 100px 80px 0px rgba(56, 56, 56, 0.10);
+  box-shadow: 0px 1.8518518209457397px 3.1481480598449707px 0px
+      rgba(56, 56, 56, 0.02),
+    0px 8.148148536682129px 6.518518447875977px 0px rgba(56, 56, 56, 0.04),
+    0px 20px 13px 0px rgba(56, 56, 56, 0.05),
+    0px 38.51852035522461px 25.481481552124023px 0px rgba(56, 56, 56, 0.06),
+    0px 64.81481170654297px 46.85185241699219px 0px rgba(56, 56, 56, 0.08),
+    0px 100px 80px 0px rgba(56, 56, 56, 0.1);
 }
 
 .footer_line {
   width: 100%;
   height: 100px;
-  background-color: #000F37;
+  background-color: #000f37;
   align-items: center;
   justify-content: center;
   display: flex;
@@ -695,8 +662,8 @@ footer button {
 
 footer input {
   border-radius: 5px;
-  border: 1px solid #E7EBEE;
-  background: #FAFAFA;
+  border: 1px solid #e7ebee;
+  background: #fafafa;
   width: 189px;
   height: 46px;
   flex-shrink: 0;
