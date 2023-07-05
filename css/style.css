@@ -165,22 +165,19 @@ h1 {
 }
 
 h2 {
-  color: #fafafa;
+  color: #313131;
   text-align: center;
-  font-size: 18px;
-  font-family: Inter;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+  font-size: 85px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: -3px;
 }
 
 h3 {
-  color: var(--headers) !important;
-  text-align: center !important;
-  font-size: 85px !important;
-  font-weight: 700 !important;
-  line-height: 100% !important;
-  letter-spacing: -3px !important;
+  color: #000f37;
+  font-size: 46px;
+  font-weight: 600;
+  line-height: 100%;
 }
 
 h4 {
@@ -305,15 +302,13 @@ h1 {
   align-items: center;
 }
 
-.flexlogo img{
+.flexlogo img {
   width: 202px;
   height: 66px;
 }
 .heroheadding .flex img {
   margin: 20px;
   border-radius: 35px;
-  box-shadow: inset;
-  box-shadow: -20px 10px 3000px 1px rgb(65, 58, 58);
 }
 
 .flexlogo {
@@ -328,47 +323,50 @@ h1 {
   margin: 20px;
   border-radius: 10px;
   box-shadow: inset;
-  box-shadow: -20px 10px 300px 1px rgb(65, 58, 58);
+}
+.mainImage {
+  margin: auto;
+  display: block;
 }
 /*-----------------------------------------------------------------------------------*/
 /* about_us
 /*-----------------------------------------------------------------------------------*/
 .about_us {
-  margin-top: 560px !important;
+  margin-top: 700px !important;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .aboutbanner {
-  margin-left: 100px;
-  margin-right: 100px;
+  position: relative;
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+.aboutbanner-1{
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-.aboutbanner div {
-  margin: 90px;
+.aboutbanner::after {
+  content: "";
+  width: 500px;
+  height: 400px;
+  border-radius: 10px;
+  background: #1e5afa;
+  z-index: -1;
+  position: absolute;
+  left: 11%;
+  top: 35%;
 }
 
-.aboutbanner img {
-  border-radius: 35px;
-  box-shadow: inset;
-  box-shadow: -20px 10px 300px 1px rgb(65, 58, 58);
-}
-.aboutbanner  ::after {
-  content : "";
-  width: 546px;
-  height: 352px;
-  background-color: var(--primary);
-  border-radius: 35px;
-  z-index: -1 ;
+.aboutbanner .text {
+  width: 40%;
 }
 
-.aboutbanner .left {
-  width: 600px;
-}
-
-.left button {
+.text button {
   width: 185px;
   height: 58px;
   color: white;
@@ -376,16 +374,21 @@ h1 {
   background-color: #000f37;
 }
 
-.left button:hover {
+.text button:hover {
   background-color: #1e5afa;
 }
 
-.left p {
+.text p {
+  color: #575757;
   font-size: 20px;
-  color: #000f37;
-  font-weight: bold;
-  margin-top: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  margin: 35px 0;
 }
+
+/*-----------------------------------------------------------------------------------*/
+/* Clients
+/*-----------------------------------------------------------------------------------*/
 
 .Clients .header p {
   font-size: 85px;
