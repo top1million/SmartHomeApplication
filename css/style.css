@@ -331,21 +331,50 @@ h1 {
 /*-----------------------------------------------------------------------------------*/
 /* about_us
 /*-----------------------------------------------------------------------------------*/
-
+#about_us {
+  margin-top: 800px;
+}
+#about_us h2 {
+  margin-bottom: 8%;
+}
 .aboutbanner {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  gap: 100px;
 }
 
-.aboutbanner img {
+.image_banner {
+  max-width: 50% !important;
   width: 50% !important;
   height: 50% !important;
 }
 
+.aboutbanner img {
+  margin: auto auto;
+  width: 50%;
+  height: 40%;
+  display: block;
+}
+
+.image_banner::after {
+  background-color: #1e5afa;
+  content: "";
+  width: 46%;
+  height: 50%;
+  position: absolute;
+  top: 30%;
+  z-index: -1;
+}
+#test {
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
 .text {
   height: 100%;
-  width: 500px;
+  width: 50%;
+  margin-top: 10%;
 }
 
 .text button {
@@ -364,7 +393,12 @@ h1 {
   color: #575757;
   font-size: 20px;
   font-weight: 400;
+  width: 70%;
   line-height: 32px;
+  margin: 35px 0;
+}
+.text h3 {
+  width: 70% !important;
 }
 /*-----------------------------------------------------------------------------------*/
 /* Clients
@@ -386,91 +420,28 @@ h1 {
 .testimonies {
   margin-top: 100px;
 }
-
-.testimonies .flex p {
+.testimonies p {
   color: #5f7285;
   font-size: 14px;
-  font-family: Inter;
-  font-style: italic;
   font-weight: 500;
   line-height: 30px;
   width: 520px;
   text-align: center;
+  margin: 0 auto;
+}
+.testimonies img{
+  width:600px;
+  height: 300px;
+  
 }
 
-.testimonies .flex .test {
-  width: 580px;
-  height: 273px;
-  border-radius: 5px;
-  border: #cccccc solid 1px;
-  margin: 10px;
-}
-
-.testimonies .flex .test p {
+.testimonies .flex p {
   color: #5f7285;
   font-size: 14px;
   font-weight: 500;
   line-height: 30px;
-  margin: 20px;
-  margin-top: 60px;
-  font-style: italic;
-  width: 70%;
-  text-align: start;
-}
-
-.card1 {
-  display: flex;
-  justify-content: first baseline;
-  align-items: center;
-  width: 200px;
-  height: 100px;
-  margin-left: 40px;
-}
-
-.card1 img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-}
-
-.card1 div {
-  width: 100px;
-}
-
-.card1 div p {
-  font-size: 14px;
-  color: #5f7285;
+  width: 520px;
   text-align: center;
-  font-style: italic;
-  width: 50px;
-}
-
-.NamePos {
-  display: block;
-  width: 150px;
-  margin-left: 20px;
-}
-
-.NamePos p {
-  all: revert !important;
-  width: fit-content !important;
-  font-size: 14px !important;
-  color: #5f7285 !important;
-}
-
-p[class="name"] {
-  font-size: 14px !important;
-  color: #5f7285 !important;
-  width: fit-content !important;
-  font-weight: bold !important;
-}
-
-p[class="position"] {
-  font-size: 12x !important;
-  color: #5f7285 !important;
-  width: fit-content !important;
-  font-style: italic !important;
-  font-weight: lighter !important;
 }
 
 /*-----------------------------------------------------------------------------------*/

@@ -5,9 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Smart Home Application</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css" />
+    <script src="jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+      integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="owlcarousel/owl.carousel.min.js"></script>
   </head>
 
   <body>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <div class="main_container">
       <div class="container">
         <nav>
@@ -50,12 +73,39 @@
         </div>
       </div>
     </div>
-    <div class="container">
-      <!--  -->
-      <!-- <div style = " margin-top: 500px; margin-bottom: 500px;"class="about_us">
-        <h2>About us</h2>
-      </div> -->
-      <div class="aboutbanner" style="margin-top: 900px; margin-bottom: 1000px">
+    <div class="container" id="about_us">
+      <h2>About us</h2>
+      <div class="aboutbanner">
+        <div class="image_banner">
+          <img src="images/mobile.png" />
+        </div>
+        <div class="text">
+          <h3>Smart Home's Smart Services</h3>
+          <p>
+            Ye am depending propriety sweetness distrusts belonging collected.
+            Smiling mention he in thought equally musical. Wisdom new and valley
+            answer. Contented it so is discourse recommend. Man its upon him
+            call mile. An pasture he himself believe ferrars besides cottage.
+          </p>
+          <button>Learn more</button>
+        </div>
+      </div>
+      <div class="aboutbanner" id="test">
+        <div class="image_banner">
+          <img src="images/mobile.png" />
+        </div>
+        <div class="text">
+          <h3>Smart Home's Smart Services</h3>
+          <p>
+            Ye am depending propriety sweetness distrusts belonging collected.
+            Smiling mention he in thought equally musical. Wisdom new and valley
+            answer. Contented it so is discourse recommend. Man its upon him
+            call mile. An pasture he himself believe ferrars besides cottage.
+          </p>
+          <button>Learn more</button>
+        </div>
+      </div>
+      <div class="aboutbanner">
         <div class="image_banner">
           <img src="images/mobile.png" />
         </div>
@@ -95,6 +145,7 @@
           </div>
         </div>
       </div>
+      <!--  -->
       <div class="testimonies">
         <h2>Testimonies</h2>
         <p>
@@ -102,67 +153,29 @@
           Man its upon him call mile. An pasture he himself believe ferrars
           besides cottage.
         </p>
-        <div class="flex">
-          <div class="test">
-            <p>
-              At SOLACE Engineers, we provide engineering solutions and other
-              services on various freelancing platforms. Among them all, Guru is
-              the best and our first choice to invite clients.
-            </p>
-            <div class="card1">
-              <img src="images/assets/Layer 1.png" />
-              <div class="NamePos">
-                <p class="name">John Doe</p>
-                <p class="position">CEO, SOLACE Engineers</p>
-              </div>
-            </div>
-          </div>
-          <div class="test">
-            <p>
-              At SOLACE Engineers, we provide engineering solutions and other
-              services on various freelancing platforms. Among them all, Guru is
-              the best and our first choice to invite clients.
-            </p>
-            <div class="card1">
-              <img src="images/assets/Layer 1.png" />
-              <div class="NamePos">
-                <p class="name">John Doe</p>
-                <p class="position">CEO, SOLACE Engineers</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="flex">
-          <div class="test">
-            <p>
-              At SOLACE Engineers, we provide engineering solutions and other
-              services on various freelancing platforms. Among them all, Guru is
-              the best and our first choice to invite clients.
-            </p>
-            <div class="card1">
-              <img src="images/assets/Layer 1.png" />
-              <div class="NamePos">
-                <p class="name">John Doe</p>
-                <p class="position">CEO, SOLACE Engineers</p>
-              </div>
-            </div>
-          </div>
-          <div class="test">
-            <p>
-              At SOLACE Engineers, we provide engineering solutions and other
-              services on various freelancing platforms. Among them all, Guru is
-              the best and our first choice to invite clients.
-            </p>
-            <div class="card1">
-              <img src="images/assets/Layer 1.png" />
-              <div class="NamePos">
-                <p class="name">John Doe</p>
-                <p class="position">CEO, SOLACE Engineers</p>
-              </div>
-            </div>
-          </div>
+        <div class="owl-carousel owl-theme">
+          <div class="item"><img src="images/card2.png" /></div>
+          <div class="item"><img src="images/card2.png" /></div>
+          <div class="item"><img src="images/card2.png" /></div>
+          <div class="item"><img src="images/card2.png" /></div>
+          <div class="item"><img src="images/card2.png" /></div>
+          <div class="item"><img src="images/card2.png" /></div>
+          <div class="item"><img src="images/card2.png" /></div>
+          <div class="item"><img src="images/card2.png" /></div>
+          <div class="item"><img src="images/card2.png" /></div>
+          <div class="item"><img src="images/card2.png" /></div>
+          <div class="item"><img src="images/card2.png" /></div>
+          <div class="item"><img src="images/card2.png" /></div>
+          <div class="item"><img src="images/card2.png" /></div>
+          <div class="item"><img src="images/card2.png" /></div>
+          <div class="item"><img src="images/card2.png" /></div>
+          <div class="item"><img src="images/card2.png" /></div>
+          <div class="item"><img src="images/card2.png" /></div>
+          <div class="item"><img src="images/card2.png" /></div>
+
         </div>
       </div>
+      <!-- #####################################################3 -->
       <div class="faq">
         <h2>FAQ's</h2>
         <div class="flex">
@@ -276,3 +289,16 @@
     </div>
   </body>
 </html>
+
+<script>
+  $(document).ready(function () {
+    $(".owl-carousel").owlCarousel();
+  });
+  $(".owl-carousel").owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: true,
+    autoWidth: true,
+    items:4
+  });
+</script>
