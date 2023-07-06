@@ -359,6 +359,7 @@ h1 {
 
 .image_banner::after {
   background-color: #1e5afa;
+  border-radius: 10px;
   content: "";
   width: 100%;
   height: 50%;
@@ -528,7 +529,7 @@ h1 {
   width: 22%;
 }
 
-.flexlogo img {
+.downloadApp.flexlogo img {
   width: 100%;
   height: 100%;
 }
