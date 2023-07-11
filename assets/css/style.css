@@ -197,7 +197,23 @@ h5 {
 b {
   font-weight: 500;
 }
+section h2 {
+  color: #313131;
+  text-align: center;
+  font-size: 85px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: -3px;
+}
+section h2+p{
+  color: #575757;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  width: 50%;
+  margin: 0 auto;
 
+}
 /*-----------------------------------------------------------------------------------*/
 /* Header
 /*-----------------------------------------------------------------------------------*/
@@ -408,20 +424,24 @@ h1 {
 /*-----------------------------------------------------------------------------------*/
 /* Clients
 /*-----------------------------------------------------------------------------------*/
-.Clients .flex p {
-  color: #575757;
-  text-align: center;
-  font-size: 18px;
-  font-weight: 400;
-  width: 50%;
-  margin-bottom: 30px;
-}
+
 .Clients {
   margin-top: 240px;
 }
 .Clients h2 {
   margin-bottom: 40px !important;
 }
+.Clients a {
+  border-radius: 10px;
+  padding: 10px;
+  background: #fff;
+  box-shadow: 0px 20px 50px 0px rgba(49, 49, 49, 0.05);
+  width :25%;
+}
+.Clients .flex{
+  flex:wrap;
+}
+.Clients .flex{}
 /*-----------------------------------------------------------------------------------*/
 /* testimonies
 /*-----------------------------------------------------------------------------------*/
@@ -432,7 +452,7 @@ h1 {
 .testimonies h2 {
   margin-bottom: 40px !important;
 }
-.testimonies p {
+.testimonies h2 + p {
   color: #5f7285;
   font-size: 14px;
   font-weight: 500;
@@ -466,7 +486,6 @@ h1 {
   background: #fafafa;
   padding: 50px;
   margin-bottom: 30px;
-  
 }
 .card p {
   color: #5f7285;
@@ -480,7 +499,7 @@ h1 {
   display: flex;
   margin-top: 30px;
   align-items: center;
-  gap:15px;
+  gap: 15px;
 }
 .identitycont h4 {
   color: #1b263d;
@@ -488,7 +507,7 @@ h1 {
   font-style: normal;
   font-weight: 600 !important;
   line-height: normal;
-  padding:5px;
+  padding: 5px;
 }
 .identitycont h5 {
   color: #9c9ea3 !important;
@@ -497,10 +516,10 @@ h1 {
   font-style: normal !important;
   font-weight: 400 !important;
   line-height: normal !important;
-  padding:5px;
+  padding: 5px;
 }
-.card .img{
-  background-image: url('../images/cards/image.png');
+.card .img {
+  background-image: url("../images/cards/image.png");
   background-size: cover;
   background-position: center;
   width: 50px;
