@@ -232,18 +232,6 @@ section h2 + p {
   background-repeat: no-repeat;
 }
 
-.main_container::before{
-  display:none;
-  position: fixed;
-  content: "";
-  background-image: url("../images/vectors/Scroll\ down\ arrow.png");
-  width: 175px;
-  height: 100%;
-  top: 800px;
-  right: 0;
-  background-repeat: no-repeat;
-  transform: scaleX(-1);
-}
 .main_container {
   background-color: var(--primary);
   position :relative
@@ -902,4 +890,17 @@ footer li {
 
 .footer_line{
   color: white;
+}
+
+.scrolldown{
+  display: none;
+  position: fixed;
+  content: "";
+  background-image: url("../images/vectors/Scroll\ down\ arrow.png");
+  width: 175px;
+  height: 100%;
+  top: 80%;
+  right: -50px;
+  background-repeat: no-repeat;
+  transform: scaleX(-1);
 }

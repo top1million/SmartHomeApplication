@@ -42,10 +42,18 @@ $(document).ready(function () {
 // .main_container::before show when scrolled 150px down
 $(window).scroll(function () {
   if ($(window).scrollTop() > 150) {
-    $(".main_container::before").css("display", "block");
+    $(".scrolldown").css("display", "block");
   } else {
-    $(".main_container::before").css("display", "none");
+    $(".scrolldown").css("display", "none");
   }
 }
 );
+
+// if scrolldown clicked scroll up to top 
+$(".scrolldown").click(function () {
+  $("html, body").animate({ scrollTop: 0 }, "slow");
+  return false;
+}
+);
+
 
