@@ -16,13 +16,13 @@ $(".owl-carousel").owlCarousel({
 $(document).ready(function () {
   $(".question").click(function () {
     //hide all other paragraphs and remove active class and change icon
-    $(".question").not(this).find("p").hide();
+    $(".question").not(this).find("p").slideUp();
     $(".question").not(this).removeClass("active");
-    $(".question").not(this).find("i").removeClass("fa-solid fa-minus fa-3x").addClass("fa-solid fa-plus fa-3x");
+    $(".question").not(this).find("i").removeClass("fa-solid fa-minus fa-2x").addClass("fa-solid fa-plus fa-2x");
     $(this).find("p").slideToggle();
     //change background using active clasee
     $(this).toggleClass("active");
-    $(this).find("i").toggleClass("fa-solid fa-plus fa-3x fa-solid fa-minus fa-3x");
+    $(this).find("i").toggleClass("fa-solid fa-plus fa-2x fa-solid fa-minus fa-2x");
     
   });
 });

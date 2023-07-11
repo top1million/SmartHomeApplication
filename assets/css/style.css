@@ -221,9 +221,31 @@ section h2 + p {
 /*-----------------------------------------------------------------------------------*/
 /* Header
 /*-----------------------------------------------------------------------------------*/
+.main_container::after{
+  position: absolute;
+  content: "";
+  background-image: url("../images/vectors/Ellipse\ 753\(1\).png");
+  width: 175px;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-repeat: no-repeat;
+}
 
+.main_container::before{
+  position: absolute;
+  content: "";
+  background-image: url("../images/vectors/Scroll\ down\ arrow.png");
+  width: 175px;
+  height: 100%;
+  top: 800px;
+  right: 0;
+  background-repeat: no-repeat;
+  transform: scaleX(-1);
+}
 .main_container {
   background-color: var(--primary);
+  position :relative
 }
 
 .container {
@@ -353,6 +375,26 @@ h1 {
 /*-----------------------------------------------------------------------------------*/
 /* about_us
 /*-----------------------------------------------------------------------------------*/
+.about_us::after{
+  position: absolute;
+  content: "";
+  background-image: url("../images/vectors/Vector\ 1.png");
+  width: 700px;
+  height: 1300px;
+  top: 0;
+  right: 10%;
+  background-repeat: no-repeat;
+}
+.about_us:before{
+  position: absolute;
+  content: "";
+  background-image: url("../images/vectors/Decorator.png");
+  width: 300px;
+  height: 500px;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+}
 #about_us {
   margin-top: 670px;
 }
@@ -497,7 +539,6 @@ h1 {
 }
 
 .owl-carousel.owl-loaded {
-  max-width: 1250px;
   margin: 0 auto;
 }
 
@@ -553,7 +594,26 @@ h1 {
 /*-----------------------------------------------------------------------------------*/
 /* FAQ
 /*-----------------------------------------------------------------------------------*/
-
+.faq::after{
+  position: absolute;
+  content: "";
+  background-image: url("../images/vectors/Decorator\(2\).png");
+  width: 175px;
+  height: 100%;
+  left: 0;
+  top: 50%;
+  background-repeat: no-repeat;
+}
+.faq::before{
+  position: absolute;
+  content: "";
+  background-image: url("../images/vectors/Vector\ 334.png");
+  width: 800px;
+  height: 1300px;
+  top: 0;
+  right: 10%;
+  background-repeat: no-repeat;
+}
 .faq .question {
   width: 50%;
   background: #fafafa;
@@ -639,12 +699,16 @@ h1 {
     0px 100px 80px 0px rgba(56, 56, 56, 0.1);
   border-radius: 30px;
   width: 22%;
+  cursor: pointer;
 }
 
-.downloadApp.flexlogo img {
-  width: 100%;
-  height: 100%;
+.downloadApp .links{
+  margin-top: 40px;
+  display:flex;
+  gap:40px;
+  width: 850px;
 }
+
 
 /*-----------------------------------------------------------------------------------*/
 /* Subscribe
@@ -829,4 +893,8 @@ footer li {
 .owl-nav {
   margin: 0 auto;
   width: fit-content;
+}
+
+.footer_line{
+  color: white;
 }
