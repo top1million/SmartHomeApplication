@@ -457,6 +457,14 @@ h1 {
   background-color: #000f37;
 }
 
+.button1{
+  padding : 18px 40px;
+  color: black;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-top: 10%;
+}
+
 .button:hover {
   background-color: #1e5afa;
 }
@@ -840,7 +848,6 @@ footer button {
   border-radius: 5px;
   border: 1px solid #011037;
   width: 100px;
-  height: 46px;
   flex-shrink: 0;
   box-shadow: 0px 1.8518518209457397px 3.1481480598449707px 0px
       rgba(56, 56, 56, 0.02),
@@ -864,9 +871,8 @@ footer input {
   border-radius: 5px;
   border: 1px solid #e7ebee;
   background: #fafafa;
-  width: 189px;
-  height: 46px;
-  flex-shrink: 0;
+  width: 62%;
+  padding : 8px;
 }
 
 footer li {
@@ -917,7 +923,9 @@ footer li {
   right: 50px;
   background-color: red;
   padding: 30px;
-  background-color: white;
   cursor: pointer;
+  background: #FEFEFE;
+  box-shadow: 0px 1.8518518209457397px 3.1481480598449707px 0px rgba(56, 56, 56, 0.02), 0px 8.148148536682129px 6.518518447875977px 0px rgba(56, 56, 56, 0.04), 0px 20px 13px 0px rgba(56, 56, 56, 0.05), 0px 38.51852035522461px 25.481481552124023px 0px rgba(56, 56, 56, 0.06), 0px 64.81481170654297px 46.85185241699219px 0px rgba(56, 56, 56, 0.08), 0px 100px 80px 0px rgba(56, 56, 56, 0.10);
+
 }
 
