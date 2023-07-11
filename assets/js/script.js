@@ -27,13 +27,24 @@ $(document).ready(function () {
   });
 });
 
-
+// .main_container::before{
+//   display:none;
+//   position: fixed;
+//   content: "";
+//   background-image: url("../images/vectors/Scroll\ down\ arrow.png");
+//   width: 175px;
+//   height: 100%;
+//   top: 800px;
+//   right: 0;
+//   background-repeat: no-repeat;
+//   transform: scaleX(-1);
+// }
 // .main_container::before show when scrolled 150px down
 $(window).scroll(function () {
-  if ($(window).scrollDown() > 150) {
-    $(".main_container").addClass("scrolled");
+  if ($(window).scrollTop() > 150) {
+    $(".main_container::before").css("display", "block");
   } else {
-    $(".main_container").removeClass("scrolled");
+    $(".main_container::before").css("display", "none");
   }
 }
 );
