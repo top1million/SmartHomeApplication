@@ -26,3 +26,15 @@ $(document).ready(function () {
     
   });
 });
+
+
+// .main_container::before show when scrolled 150px down
+$(window).scroll(function () {
+  if ($(window).scrollDown() > 150) {
+    $(".main_container").addClass("scrolled");
+  } else {
+    $(".main_container").removeClass("scrolled");
+  }
+}
+);
+

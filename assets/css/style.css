@@ -233,7 +233,8 @@ section h2 + p {
 }
 
 .main_container::before{
-  position: absolute;
+  display:none;
+  position: fixed;
   content: "";
   background-image: url("../images/vectors/Scroll\ down\ arrow.png");
   width: 175px;
@@ -382,7 +383,7 @@ h1 {
   width: 700px;
   height: 1300px;
   top: 0;
-  right: 10%;
+  right: 0;
   background-repeat: no-repeat;
 }
 .about_us:before{
@@ -611,8 +612,9 @@ h1 {
   width: 800px;
   height: 1300px;
   top: 0;
-  right: 10%;
+  right: 0;
   background-repeat: no-repeat;
+  z-index: -1;
 }
 .faq .question {
   width: 50%;
@@ -774,6 +776,9 @@ h1 {
   left: 100;
   background-image: url("../images/svg/sub.svg");
   transition: 0.5s;
+}
+.subscribe p{
+  color: white;
 }
 
 /*-----------------------------------------------------------------------------------*/
