@@ -701,7 +701,7 @@ h1 {
   width: 548px;
 }
 
-.downloadApp img {
+.downloadApp>img {
   box-shadow: -5px 1.8518518209457397px 3.1481480598449707px 0px
       rgba(56, 56, 56, 0.02),
     0px 8.148148536682129px 6.518518447875977px 0px rgba(56, 56, 56, 0.04),
