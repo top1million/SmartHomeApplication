@@ -318,11 +318,9 @@ h1 {
   width: 720px;
 }
 .flex {
-  margin-bottom: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 100px;
 }
 
 .heroheading .flexlogo {
@@ -560,13 +558,16 @@ h1 {
 /*-----------------------------------------------------------------------------------*/
 
 .faq .question {
-  width: 600px;
+  width: 680px;
   background: #fafafa;
   gap: 30px;
   border-radius: 10px;
   padding: 30px;
+  margin : 0 auto;
 }
-
+.faq ul{
+  margin-top : 50px;
+}
 
 
 .faq li {
@@ -590,11 +591,20 @@ h1 {
   background-color: #e7ebee;
 }
 
-.question{
-  margin-top: 40px;
-}
 .question p{
+  margin-top: 20px;
+  margin-left: 14%;
   display:none;
+}
+.question .flex{
+  justify-content: start;
+  gap : 50px;
+}
+.question.active{
+  background-color: #fff;
+}
+.question.active i{
+  color: #FD5757;
 }
 /*-----------------------------------------------------------------------------------*/
 /* Download App
