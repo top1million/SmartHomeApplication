@@ -297,18 +297,21 @@ h1 {
   width: 720px;
 }
 .flex {
+  margin-bottom: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 100px;
 }
 
-.flexlogo img {
-  width: 202px;
-  height: 66px;
+.heroheading .flexlogo {
+  gap: 20px;
 }
 .heroheadding .flex img {
   margin: 20px;
   border-radius: 35px;
+  width: 202px;
+  height: 66px;
 }
 
 .flexlogo {
@@ -449,15 +452,58 @@ h1 {
   text-align: center;
 }
 
-.owl-carousel.owl-loaded{
- max-width: 1250px;
+.owl-carousel.owl-loaded {
+  max-width: 1250px;
   margin: 0 auto;
 }
 
-.owl-carousel.owl-loaded img{
+.owl-carousel.owl-loaded img {
   margin: 10%;
 }
 
+.card {
+  width: 56%;
+  height: 280px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background: #fafafa;
+}
+.card p {
+  padding-top: 50px;
+  padding-right: 50px;
+  padding-left: 50px;
+  color: #5f7285;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 30px;
+  box-sizing: border-box;
+}
+.card .identitycont {
+  display: flex;
+  padding-left: 50px;
+  padding-top: 30px;
+  align-items: center;
+  gap:15px;
+  box-sizing: border-box;
+}
+.identitycont h4 {
+  color: #1b263d;
+  font-size: 14px !important;
+  font-style: normal;
+  font-weight: 600 !important;
+  line-height: normal;
+  padding:5px;
+}
+.identitycont h5 {
+  color: #9c9ea3 !important;
+  font-family: Inter !important;
+  font-size: 12px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: normal !important;
+  padding:5px;
+}
 /*-----------------------------------------------------------------------------------*/
 /* FAQ
 /*-----------------------------------------------------------------------------------*/
@@ -548,7 +594,6 @@ h1 {
   align-items: center;
   position: relative;
 }
-
 
 .subscribe h5 {
   color: #fdfdff !important;
@@ -700,12 +745,12 @@ footer li {
   display: flex;
   justify-content: space-between;
 }
-.btn-wrap{
+.btn-wrap {
   margin: 0 auto;
   width: fit-content;
   margin-bottom: 50px;
 }
-.btn-wrap button{
+.btn-wrap button {
   width: 200px;
   border-radius: 20px;
   background-color: var(--primary);
@@ -715,7 +760,7 @@ footer li {
   padding: 20px;
 }
 
-.owl-nav{
+.owl-nav {
   margin: 0 auto;
   width: fit-content;
 }
