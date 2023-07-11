@@ -311,7 +311,7 @@ nav a:hover {
 /*-----------------------------------------------------------------------------------*/
 /* HeroAdding
 /*-----------------------------------------------------------------------------------*/
-.soclails {
+.socials {
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -319,7 +319,7 @@ nav a:hover {
   position: absolute;
   left: -50px;
   top: 40%;
-  color: ffffff;
+  color: #ffffff;
 }
 
 .heroheadding {
@@ -369,7 +369,6 @@ h1 {
 .flexlogo img {
   margin: 20px;
   border-radius: 10px;
-  box-shadow: inset;
 }
 .mainImage {
   margin: auto;
@@ -783,7 +782,7 @@ h1 {
   width: 200px;
   height: 100px;
   bottom: 0;
-  left: 100;
+  left: 100px;
   background-image: url("../images/svg/sub.svg");
   transition: 0.5s;
 }
