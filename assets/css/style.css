@@ -113,7 +113,7 @@ body {
   font-weight: 400;
   width: 100%;
   min-height: 100%;
-  color: var(--default);
+  color:black;
   background: #fff;
   font-size: 16px;
   direction: ltr;
@@ -438,9 +438,9 @@ h1 {
   position:absolute;
   content: "";
   background-image: url("../images/vectors/Decorator\(1\).png");
-  width: 100%;
+  width: 175px;
   height: 100%;
-  right: 80;
+  right: 0;
   top: 0;
   background-repeat: no-repeat;
 }
@@ -560,17 +560,18 @@ h1 {
 /*-----------------------------------------------------------------------------------*/
 
 .faq .question {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  width: 676px;
-  border-radius: 10px;
-  border: 1px solid #e7ebee;
+  width: 600px;
   background: #fafafa;
+  gap: 30px;
+  border-radius: 10px;
+  padding: 30px;
 }
+
+
 
 .faq li {
   margin: 15px;
+  list-style: none;
 }
 
 .faq h5 {
@@ -589,6 +590,12 @@ h1 {
   background-color: #e7ebee;
 }
 
+.question{
+  margin-top: 40px;
+}
+.question p{
+  display:none;
+}
 /*-----------------------------------------------------------------------------------*/
 /* Download App
 /*-----------------------------------------------------------------------------------*/
