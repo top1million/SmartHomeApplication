@@ -221,7 +221,7 @@ section h2 + p {
 /*-----------------------------------------------------------------------------------*/
 /* Header
 /*-----------------------------------------------------------------------------------*/
-.main_container::after{
+.main_container::after {
   position: absolute;
   content: "";
   background-image: url("../images/vectors/Ellipse\ 753\(1\).png");
@@ -233,14 +233,13 @@ section h2 + p {
 }
 
 .main_container {
-
-  position :relative
+  position: relative;
 }
-.main_container::before{
+.main_container::before {
   background-color: var(--primary);
   width: 100%;
   height: 70%;
-  position :absolute;
+  position: absolute;
   content: "";
   top: 0;
 }
@@ -312,17 +311,15 @@ nav a:hover {
 /*-----------------------------------------------------------------------------------*/
 /* HeroAdding
 /*-----------------------------------------------------------------------------------*/
-.soclails{
+.soclails {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  list-style-type: none !important;  
-  position :absolute;
-  left : -50px;
-  top : 40%
-}
-.soclails a{
-  target : _blank;
+  list-style-type: none !important;
+  position: absolute;
+  left: -50px;
+  top: 40%;
+  color: ffffff;
 }
 
 .heroheadding {
@@ -382,7 +379,7 @@ h1 {
 /*-----------------------------------------------------------------------------------*/
 /* about_us
 /*-----------------------------------------------------------------------------------*/
-.about_us::after{
+.about_us::after {
   position: absolute;
   content: "";
   background-image: url("../images/vectors/Vector\ 1.png");
@@ -393,7 +390,7 @@ h1 {
   background-repeat: no-repeat;
   z-index: -1;
 }
-.about_us:before{
+.about_us:before {
   position: absolute;
   content: "";
   background-image: url("../images/vectors/Decorator.png");
@@ -404,7 +401,7 @@ h1 {
   background-repeat: no-repeat;
 }
 #about_us {
-  margin-top: 670px;
+  margin-top: 70px;
 }
 #about_us h2 {
   margin-bottom: 8%;
@@ -451,14 +448,14 @@ h1 {
 }
 
 .button {
-  padding : 18px 40px;
+  padding: 18px 40px;
   color: white;
   border-radius: 10px;
   background-color: #000f37;
 }
 
-.button1{
-  padding : 18px 40px;
+.button1 {
+  padding: 18px 40px;
   color: black;
   border: 1px solid black;
   border-radius: 10px;
@@ -609,7 +606,7 @@ h1 {
 /*-----------------------------------------------------------------------------------*/
 /* FAQ
 /*-----------------------------------------------------------------------------------*/
-.faq::after{
+.faq::after {
   position: absolute;
   content: "";
   background-image: url("../images/vectors/Decorator\(2\).png");
@@ -619,7 +616,7 @@ h1 {
   top: 50%;
   background-repeat: no-repeat;
 }
-.faq::before{
+.faq::before {
   position: absolute;
   content: "";
   background-image: url("../images/vectors/Vector\ 334.png");
@@ -718,13 +715,12 @@ h1 {
   cursor: pointer;
 }
 
-.downloadApp .links{
+.downloadApp .links {
   margin-top: 40px;
-  display:flex;
-  gap:40px;
+  display: flex;
+  gap: 40px;
   width: 850px;
 }
-
 
 /*-----------------------------------------------------------------------------------*/
 /* Subscribe
@@ -791,7 +787,7 @@ h1 {
   background-image: url("../images/svg/sub.svg");
   transition: 0.5s;
 }
-.subscribe p{
+.subscribe p {
   color: white;
 }
 
@@ -810,7 +806,6 @@ footer {
 footer h6 {
   color: #313131;
   font-size: 32px;
-  font-family: Inter;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -872,7 +867,7 @@ footer input {
   border: 1px solid #e7ebee;
   background: #fafafa;
   width: 62%;
-  padding : 8px;
+  padding: 8px;
 }
 
 footer li {
@@ -912,11 +907,11 @@ footer li {
   width: fit-content;
 }
 
-.footer_line{
+.footer_line {
   color: white;
 }
 
-.scrolldown{
+.scrolldown {
   color: black;
   position: fixed;
   top: 80%;
@@ -924,8 +919,12 @@ footer li {
   background-color: red;
   padding: 30px;
   cursor: pointer;
-  background: #FEFEFE;
-  box-shadow: 0px 1.8518518209457397px 3.1481480598449707px 0px rgba(56, 56, 56, 0.02), 0px 8.148148536682129px 6.518518447875977px 0px rgba(56, 56, 56, 0.04), 0px 20px 13px 0px rgba(56, 56, 56, 0.05), 0px 38.51852035522461px 25.481481552124023px 0px rgba(56, 56, 56, 0.06), 0px 64.81481170654297px 46.85185241699219px 0px rgba(56, 56, 56, 0.08), 0px 100px 80px 0px rgba(56, 56, 56, 0.10);
-
+  background: #fefefe;
+  box-shadow: 0px 1.8518518209457397px 3.1481480598449707px 0px
+      rgba(56, 56, 56, 0.02),
+    0px 8.148148536682129px 6.518518447875977px 0px rgba(56, 56, 56, 0.04),
+    0px 20px 13px 0px rgba(56, 56, 56, 0.05),
+    0px 38.51852035522461px 25.481481552124023px 0px rgba(56, 56, 56, 0.06),
+    0px 64.81481170654297px 46.85185241699219px 0px rgba(56, 56, 56, 0.08),
+    0px 100px 80px 0px rgba(56, 56, 56, 0.1);
 }
-
