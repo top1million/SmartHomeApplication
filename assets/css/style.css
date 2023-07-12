@@ -161,7 +161,7 @@ h1 {
   text-align: center !important;
   margin-top: 50px !important;
   color: var(--default) !important;
-  width: 550px !important;
+  max-width: 550px !important;
 }
 
 h2 {
@@ -323,6 +323,7 @@ nav a:hover {
 }
 
 .heroheadding {
+  z-index: 1;
   align-items: center;
 }
 h1 {
@@ -332,7 +333,6 @@ h1 {
   font-size: 85px;
   font-weight: 800;
   line-height: 100%;
-  min-width: 600px;
 }
 .heroheadding p {
   margin: 30px auto;
@@ -362,12 +362,11 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 10%;
   margin-top: 50px;
+  gap: 20px;
 }
 
 .flexlogo img {
-  margin: 20px;
   border-radius: 10px;
 }
 .mainImage {
@@ -701,7 +700,7 @@ h1 {
   width: 548px;
 }
 
-.downloadApp>img {
+.downloadApp > img {
   box-shadow: -5px 1.8518518209457397px 3.1481480598449707px 0px
       rgba(56, 56, 56, 0.02),
     0px 8.148148536682129px 6.518518447875977px 0px rgba(56, 56, 56, 0.04),
@@ -714,11 +713,8 @@ h1 {
   cursor: pointer;
 }
 
-.downloadApp .links {
-  margin-top: 40px;
-  display: flex;
-  gap: 40px;
-  width: 850px;
+.downloadApp .flexlogo {
+  justify-content: start;
 }
 
 /*-----------------------------------------------------------------------------------*/
@@ -871,6 +867,7 @@ footer input {
 
 footer li {
   padding: 15px;
+  list-style: none;
 }
 .subscribe p {
   width: 550px;
@@ -926,4 +923,94 @@ footer li {
     0px 38.51852035522461px 25.481481552124023px 0px rgba(56, 56, 56, 0.06),
     0px 64.81481170654297px 46.85185241699219px 0px rgba(56, 56, 56, 0.08),
     0px 100px 80px 0px rgba(56, 56, 56, 0.1);
+}
+
+/*-----------------------------------------------------------------------------------*/
+/* media css
+/*-----------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 700px) {
+  body{
+    width: 100%;
+  }
+  nav{
+    width: 100%;
+    display : none;
+  }
+  .mainImage {
+    width: 100%;
+    height: 100%;
+  }
+  .socials{
+    z-index: -1;
+    left: -10%;
+    top : 30%;
+    gap: 5px;
+  }
+  .heroheadding{
+    width: 100%;
+    margin-top: 0px !important;
+  }
+  .heroheadding h1{
+    padding: 15px 0px !important;
+    margin-top: 0px !important;
+    font-size: 20px !important;
+    width: 100% !important;
+    text-align: center !important;
+  }
+  .heroheadding p{
+    font-size: 13px;
+    margin: 0 auto;
+    width: 90%;
+    padding: 15px;
+  }
+  .aboutbanner{
+    z-index: 1;
+    flex-wrap: wrap;
+  }
+  .about_us h2{
+    font-size: 40px;
+  }
+  .image_banner{
+    margin: 0 auto;
+  }
+  .image_banner img{
+    width: 80%;
+  }
+  .image_banner::after{
+    content: "";
+    width: 100%;
+    z-index: -1;
+  }
+  .text{
+    width: 100%;
+    margin: 0 auto !important;
+    padding: 15px;
+  }
+  .text h3{
+    padding: 10px;
+    margin: 0 auto;
+    font-size: 30px;
+    text-align: center
+  }
+  .text p{
+    padding : 10px;
+    margin: 0 auto;
+    font-size: 15px;
+    text-align :justify;
+  }
+  .text .button{
+    padding: 10px;
+    margin: 0 auto;
+    display: block;
+    max-width: 150px;
+    text-align: center;
+  }
+  .text .button1{
+    padding: 10px;
+    margin: 0 auto;
+    display: block;
+    max-width: 150px;
+    text-align: center;
+  }
 }
