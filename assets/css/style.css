@@ -354,7 +354,6 @@ h1 {
 .heroheadding .flex img {
   margin: 20px;
   border-radius: 35px;
-  width: 202px;
   height: 66px;
 }
 
@@ -532,10 +531,10 @@ h1 {
   font-size: 14px;
   font-weight: 500;
   line-height: 30px;
-  width: 520px;
-  margin-bottom: 80px !important;
+  margin-bottom: 25px !important;
   text-align: center;
   margin: 0 auto;
+  width: 100%;
 }
 
 .testimonies .flex p {
@@ -543,7 +542,6 @@ h1 {
   font-size: 14px;
   font-weight: 500;
   line-height: 30px;
-  width: 520px;
   text-align: center;
 }
 
@@ -625,6 +623,7 @@ h1 {
   z-index: -1;
 }
 .faq .question {
+  box-sizing: border-box;
   width: 50%;
   background: #fafafa;
   gap: 30px;
@@ -688,7 +687,6 @@ h1 {
 
 .downloadApp h3 {
   color: #313131;
-  width: 400px;
   text-align: start !important;
   margin: 40px;
 }
@@ -696,7 +694,6 @@ h1 {
 .downloadApp .Appleft p {
   color: #575757;
   font-size: 18px;
-  width: 548px;
 }
 
 .downloadApp > img {
@@ -741,7 +738,6 @@ h1 {
 
 .subscribe h2 {
   text-align: start;
-  width: 556px;
   color: #f5f2ff;
   font-weight: 400;
   line-height: 32px;
@@ -816,7 +812,6 @@ footer a:hover {
 }
 
 .footer0 {
-  width: 360px;
   height: 345px !important;
 }
 
@@ -869,7 +864,6 @@ footer li {
   list-style: none;
 }
 .subscribe p {
-  width: 550px;
 }
 .register {
   width: 100%;
@@ -1046,8 +1040,9 @@ footer li {
   }
   .subscribe{
     flex-wrap: wrap;
-    padding: 30px;
+    box-sizing: border-box;
     margin: 0 auto !important;
+    height: fit-content;
   }
   .subscribe h5{
     margin: 0 auto;
@@ -1074,5 +1069,12 @@ footer li {
   }
   .footer3{
     margin: 0 auto;
+  }
+  section h2 + p {
+    width: 100%;
+  }
+  .downloadApp {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
   }
 }
