@@ -793,6 +793,7 @@ footer {
   justify-content: space-between;
   background-color: var(--default);
   gap: 10px;
+  margin-bottom: 20px;
 }
 
 footer h6 {
@@ -801,6 +802,7 @@ footer h6 {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  margin-bottom: 15px;
 }
 
 footer a {
@@ -813,10 +815,9 @@ footer a:hover {
   color: var(--primary) !important;
 }
 
-.footer0{
+.footer0 {
   max-width: 300px;
 }
-
 
 footer button {
   border-radius: 5px;
@@ -835,8 +836,11 @@ footer button {
 .footer_line {
   width: 100%;
   background-color: #000f37;
-  align-items: center;
+  text-align: center;
   padding: 50px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
 }
 
 footer input {
@@ -859,6 +863,7 @@ footer li {
   align-items: center;
 }
 .Register {
+  margin-top: 15px;
   display: flex;
   justify-content: space-between;
 }
@@ -909,159 +914,158 @@ footer li {
 /*-----------------------------------------------------------------------------------*/
 
 @media screen and (max-width: 800px) {
-  body{
+  body {
     width: 100%;
   }
-  nav{
+  nav {
     width: 100%;
-    display : none;
+    display: none;
   }
   .mainImage {
     width: 100%;
     height: 100%;
   }
-  .socials{
+  .socials {
     z-index: -1;
     left: -10%;
-    top : 30%;
+    top: 30%;
     gap: 5px;
   }
-  .heroheadding{
+  .heroheadding {
     width: 100%;
     margin-top: 0px !important;
   }
-  .heroheadding h1{
+  .heroheadding h1 {
     padding: 15px 0px !important;
     margin-top: 0px !important;
     font-size: 20px !important;
     width: 100% !important;
     text-align: center !important;
   }
-  .heroheadding p{
+  .heroheadding p {
     font-size: 13px;
     margin: 0 auto;
     width: 90%;
     margin-bottom: 15px;
   }
-  .aboutbanner{
+  .aboutbanner {
     z-index: 1;
     flex-wrap: wrap;
   }
-  .about_us h2{
+  .about_us h2 {
     font-size: 40px;
   }
-  .image_banner{
+  .image_banner {
     margin: 0 auto;
   }
-  .image_banner img{
+  .image_banner img {
     width: 80%;
   }
-  .image_banner::after{
+  .image_banner::after {
     content: "";
     width: 100%;
     z-index: -1;
   }
-  .text{
+  .text {
     width: 100%;
     margin: 0 auto !important;
     padding: 15px;
   }
-  .text h3{
+  .text h3 {
     padding: 10px;
     margin: 0 auto;
     font-size: 30px;
-    text-align: center
+    text-align: center;
   }
-  .text p{
-    padding : 10px;
+  .text p {
+    padding: 10px;
     margin: 0 auto;
     font-size: 15px;
-    text-align :justify;
+    text-align: justify;
   }
-  .text .button{
+  .text .button {
     padding: 10px;
     margin: 0 auto;
     display: block;
     max-width: 150px;
     text-align: center;
   }
-  .text .button1{
+  .text .button1 {
     padding: 10px;
     margin: 0 auto;
     display: block;
     max-width: 150px;
     text-align: center;
   }
-  .container h2{
+  .container h2 {
     font-size: 40px;
   }
-  .Clients{
+  .Clients {
     z-index: 1;
-    margin-top : 10px;
+    margin-top: 10px;
   }
-  .Clients a{
+  .Clients a {
     width: 45%;
   }
-  .question{
+  .question {
     width: 100% !important;
     margin: 0 auto;
   }
-  ul{
+  ul {
     position: relative;
     z-index: 1 !important;
   }
-  .Appleft h3{
+  .Appleft h3 {
     margin: 0 auto;
     padding: 20px;
   }
-  .Appleft p{
+  .Appleft p {
     margin: 0 auto;
     padding: 20px;
     text-align: center;
   }
-  .Appleft .flexlogo{
+  .Appleft .flexlogo {
     margin: 0 auto;
     padding: 20px;
     justify-content: center;
   }
-  .subscribe{
+  .subscribe {
     padding: 20px;
     flex-wrap: wrap;
     box-sizing: border-box;
     margin: 0 auto !important;
     height: fit-content;
   }
-  .subscribe h5{
+  .subscribe h5 {
     margin: 0 auto;
-  
+
     text-align: center;
     font-size: 40px !important;
   }
-  .subscribe p{
+  .subscribe p {
     margin: 0 auto;
     padding: 20px;
     text-align: center;
     font-size: 15px !important;
   }
-  footer{
+  footer {
     flex-wrap: wrap;
     gap: 20px;
   }
-  .footer0{
+  .footer0 {
     width: 58%;
     margin: 0 auto;
     padding: 30px;
     text-align: center;
     height: fit-content !important;
   }
-  .footer0 .Register{
+  .footer0 .Register {
     margin-top: 15px;
-    gap:  10px;
-  
+    gap: 10px;
   }
-  .footer0{
+  .footer0 {
     width: 100%;
-    margin : 15px;
+    margin: 15px;
   }
   section h2 + p {
     width: 100%;
@@ -1076,11 +1080,10 @@ footer li {
   .container {
     width: 90% !important;
   }
-  h6{
-    margin-bottom: 10px;
+
+  .footer_line {
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
   }
-  .footer_line{
-    padding:5px !important;
-  }
-  
 }
