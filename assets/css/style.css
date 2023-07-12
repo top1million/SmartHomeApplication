@@ -319,6 +319,11 @@ nav a:hover {
 }
 .topnav #myLinks {
   display: none;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: #ffffff;
 }
 
 .topnav a.icon {
