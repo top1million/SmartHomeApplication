@@ -340,7 +340,7 @@ h1 {
   color: #fafafa;
   font-size: 18px;
   font-weight: 400;
-  width: 720px;
+  max-width: 720px;
 }
 .flex {
   display: flex;
@@ -372,7 +372,6 @@ h1 {
 .mainImage {
   margin: auto;
   display: block;
-  max-width: 1100px;
 }
 /*-----------------------------------------------------------------------------------*/
 /* about_us
@@ -929,7 +928,7 @@ footer li {
 /* media css
 /*-----------------------------------------------------------------------------------*/
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   body{
     width: 100%;
   }
@@ -1012,5 +1011,68 @@ footer li {
     display: block;
     max-width: 150px;
     text-align: center;
+  }
+  .container h2{
+    font-size: 40px;
+  }
+  .Clients{
+    z-index: 1;
+    margin-top : 10px;
+  }
+  .Clients a{
+    width: 45%;
+  }
+  .question{
+    width: 100% !important;
+    margin: 0 auto;
+  }
+  ul{
+    position: relative;
+    z-index: 1 !important;
+  }
+  .Appleft h3{
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .Appleft p{
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  .Appleft .flexlogo{
+    margin: 0 auto;
+    padding: 20px;
+    justify-content: center;
+  }
+  .subscribe{
+    flex-wrap: wrap;
+    padding: 30px;
+    margin: 0 auto !important;
+  }
+  .subscribe h5{
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    font-size: 40px !important;
+  }
+  .subscribe p{
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    font-size: 15px !important;
+  }
+  footer{
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .footer0{
+    width: 58%;
+    margin: 0 auto;
+    padding: 30px;
+    text-align: center;
+    height: fit-content !important;
+  }
+  .footer3{
+    margin: 0 auto;
   }
 }

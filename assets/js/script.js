@@ -11,7 +11,19 @@ $(".owl-carousel").owlCarousel({
     "<img src='assets/images/vectors/left.png'>",
     "<img src='assets/images/vectors/right.png'>",
   ],
+  responsive: {
+    0: {
+      items: 1,
+      nav: false,
+      dots: true,
+    },
+    700: {
+      items: 2,
+      nav: true,
+      dots: false,
+    },}
 });
+
 
 $(document).ready(function () {
   $(".question").click(function () {
