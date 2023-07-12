@@ -787,7 +787,6 @@ h1 {
 /*-----------------------------------------------------------------------------------*/
 
 footer {
-  margin-top: 146px;
   display: flex;
   justify-content: space-between;
   background-color: var(--default);
@@ -811,22 +810,10 @@ footer a:hover {
   color: var(--primary) !important;
 }
 
-.footer0 {
-  height: 345px !important;
+.footer0{
+  max-width: 300px;
 }
 
-.footer1 {
-  height: 100% !important;
-  height: 345px !important;
-}
-
-.footer2 {
-  height: 345px !important;
-}
-
-.footer3 {
-  height: 345px !important;
-}
 
 footer button {
   border-radius: 5px;
