@@ -860,10 +860,8 @@ footer input {
 }
 
 footer li {
-  padding: 15px;
+  margin-bottom: 15px;
   list-style: none;
-}
-.subscribe p {
 }
 .register {
   width: 100%;
@@ -955,7 +953,7 @@ footer li {
     font-size: 13px;
     margin: 0 auto;
     width: 90%;
-    padding: 15px;
+    margin-bottom: 15px;
   }
   .aboutbanner{
     z-index: 1;
@@ -1039,6 +1037,7 @@ footer li {
     justify-content: center;
   }
   .subscribe{
+    padding: 20px;
     flex-wrap: wrap;
     box-sizing: border-box;
     margin: 0 auto !important;
@@ -1046,7 +1045,7 @@ footer li {
   }
   .subscribe h5{
     margin: 0 auto;
-    padding: 20px;
+  
     text-align: center;
     font-size: 40px !important;
   }
@@ -1077,4 +1076,14 @@ footer li {
     flex-wrap: wrap;
     flex-direction: column-reverse;
   }
+  .aboutbanner {
+    gap: 10px;
+  }
+  .container {
+    width: 90% !important;
+  }
+  h6{
+    margin-bottom: 10px;
+  }
+  
 }
