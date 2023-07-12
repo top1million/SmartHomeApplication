@@ -21,21 +21,26 @@ $(".owl-carousel").owlCarousel({
       items: 2,
       nav: true,
       dots: false,
-    },}
+    },
+  },
 });
-
 
 $(document).ready(function () {
   $(".question").click(function () {
     //hide all other paragraphs and remove active class and change icon
     $(".question").not(this).find("p").slideUp();
     $(".question").not(this).removeClass("active");
-    $(".question").not(this).find("i").removeClass("fa-solid fa-minus fa-2x").addClass("fa-solid fa-plus fa-2x");
+    $(".question")
+      .not(this)
+      .find("i")
+      .removeClass("fa-solid fa-minus fa-2x")
+      .addClass("fa-solid fa-plus fa-2x");
     $(this).find("p").slideToggle();
     //change background using active clasee
     $(this).toggleClass("active");
-    $(this).find("i").toggleClass("fa-solid fa-plus fa-2x fa-solid fa-minus fa-2x");
-    
+    $(this)
+      .find("i")
+      .toggleClass("fa-solid fa-plus fa-2x fa-solid fa-minus fa-2x");
   });
 });
 
@@ -58,14 +63,30 @@ $(window).scroll(function () {
   } else {
     $(".scrolldown").css("display", "none");
   }
-}
-);
+});
 
-// if scrolldown clicked scroll up to top 
+// if scrolldown clicked scroll up to top
 $(".scrolldown").click(function () {
   $("html, body").animate({ scrollTop: 0 }, "slow");
   return false;
+});
+
+// function myFunction() {
+//   var x = document.getElementById("myLinks");
+//   // make it slide down
+//   if (x.style.display === "block") {
+//     x.style.display = "none";
+//     // make it slide up
+//   }
+//   else {
+//     x.style.display = "block";
+//   }
+// }
+
+
+
+//do the same function using toggleslide
+function myFunction(){
+  var x = document.getElementById("myLinks");
+  $(x).slideToggle();
 }
-);
-
-
